@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Форум | NOW RUSSIA</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<div class="login" id="login">
+  <h2>Вход на форум</h2>
+  <input id="username" placeholder="Ваш ник">
+  <button onclick="login()">Войти</button>
+</div>
+
+<div class="login2">
+  <h3>Вход администратора</h3>
+  <input id="adminPass" type="password" placeholder="Пароль админа">
+  <button onclick="adminLogin()">Войти как админ</button>
+</div>
+
+<div class="forum hidden" id="forum">
+  <h1>Форум игры NOW RUSSIA</h1>
+
+  <div class="new-topic">
+    <input id="topicTitle" placeholder="Название темы">
+    <textarea id="topicText" placeholder="Сообщение"></textarea>
+    <button onclick="createTopic()">Создать тему</button>
+  </div>
+
+  <div id="topics"></div>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
